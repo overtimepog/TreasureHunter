@@ -1,0 +1,103 @@
+# World in which the treasure hunts will occur
+worldName: "world"
+
+# Number of items that will be placed in each chest
+itemsPerChest: 5
+
+numberOfChests: 10  # Set your desired default number of chests here
+
+chest_duration: 300  # Duration in seconds. For example, 300 seconds or 5 minutes.
+
+# Location determination settings
+location_determination:
+  useWorldBorder: true
+  coordinateBounds:
+    - [100, 100]
+    - [500, 500]
+  spawnRadius: 250
+
+# Treasure tier chances for each treasure hunt
+treasure_chances:
+  BASIC: 0.5
+  INTERMEDIATE: 0.25
+  ADVANCED: 0.15
+  LEGENDARY: 0.1
+
+# Enchantment chances for each treasure tier
+enchant_chances:
+  BASIC: 0.1
+  INTERMEDIATE: 0.3
+  ADVANCED: 0.5
+  LEGENDARY: 0.8
+
+# Max enchantment levels for each treasure tier
+max_levels:
+  BASIC: 1
+  INTERMEDIATE: 3
+  ADVANCED: 5
+  LEGENDARY: 10
+
+# Max number of enchants for each treasure tier
+max_enchants:
+  BASIC: 3
+  INTERMEDIATE: 6
+  ADVANCED: 9
+  LEGENDARY: 12
+
+# Loot tables for each treasure tier, with item: min-max
+loot_tables:
+  BASIC:
+    STONE_SWORD: 1-1
+    STONE_PICKAXE: 1-1
+    STONE_AXE: 1-1
+    STONE_SHOVEL: 1-1
+    STONE_HOE: 1-1
+    COAL: 1-1
+    IRON_INGOT: 1-1
+  
+  INTERMEDIATE:
+    IRON_SWORD: 1-1
+    IRON_PICKAXE: 1-1
+    IRON_AXE: 1-1
+    IRON_SHOVEL: 1-1
+    IRON_HOE: 1-1
+    IRON_HELMET: 1-1
+    IRON_CHESTPLATE: 1-1
+    IRON_LEGGINGS: 1-1
+    IRON_BOOTS: 1-1
+    REDSTONE: 1-1
+    GOLD_INGOT: 1-1
+
+  ADVANCED:
+    DIAMOND_SWORD: 1-1
+    DIAMOND_PICKAXE: 1-1
+    DIAMOND_AXE: 1-1
+    DIAMOND_SHOVEL: 1-1
+    DIAMOND_HOE: 1-1
+    DIAMOND_HELMET: 1-1
+    DIAMOND_CHESTPLATE: 1-1
+    DIAMOND_LEGGINGS: 1-1
+    DIAMOND_BOOTS: 1-1
+    DIAMOND: 1-1
+    EMERALD: 1-1
+
+  LEGENDARY:
+    NETHERITE_SWORD: 1-1
+    NETHERITE_PICKAXE: 1-1
+    NETHERITE_AXE: 1-1
+    NETHERITE_SHOVEL: 1-1
+    NETHERITE_HOE: 1-1
+    NETHERITE_HELMET: 1-1
+    NETHERITE_CHESTPLATE: 1-1
+    NETHERITE_LEGGINGS: 1-1
+    NETHERITE_BOOTS: 1-1
+    NETHERITE_SCRAP: 1-1
+    NETHERITE_INGOT: 1-1
+    ENDER_PEARL: 1-1
+
+# Number of guardians for each treasure tier
+guardians_per_tier:
+  BASIC: 2
+  INTERMEDIATE: 3
+  ADVANCED: 4
+  LEGENDARY: 5

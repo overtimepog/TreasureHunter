@@ -1,0 +1,22 @@
+api-version: '1.13'
+author: Overtime
+commands:
+  starttreasurehunt:
+    description: Starts the treasure hunt.
+    permission: treasurehunt.admin
+    usage: /starttreasurehunt
+  treasureclue:
+    description: Gets a clue for the treasure hunt.
+    usage: /treasureclue
+  startcycle:
+    description: Start the treasure hunt cycle
+    permission: treasurehunt.admin
+    usage: /<command>
+  stopcycle:
+    description: Stop the treasure hunt cycle
+    permission: treasurehunt.admin
+    usage: /<command>
+description: A treasure hunt plugin.
+main: com.treasurehunt.SimpleTreasureHunt
+name: SimpleTreasureHunt
+version: '1.7.6'
